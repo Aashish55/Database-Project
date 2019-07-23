@@ -28,9 +28,7 @@ body {
 }
 
 #form input[type="text"],
-#form input[type="email"],
-#form input[type="tel"],
-#form input[type="url"],
+#form input[type="number"],
 #form textarea,
 #form button[type="submit"] {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
@@ -67,6 +65,7 @@ fieldset {
 }
 
 #form input[type="text"],
+#form input[type="number"],
 #form textarea {
   width: 100%;
   border: 1px solid #ccc;
@@ -76,6 +75,7 @@ fieldset {
 }
 
 #form input[type="text"]:hover,
+#form input[type="number"]:hover,
 #form textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;

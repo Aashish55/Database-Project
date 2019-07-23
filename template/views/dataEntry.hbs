@@ -11,205 +11,114 @@
 
 <body>
     <div class="container">
-        <form id="form" action="" method="post">
+        <form id="form" action="/submitperson" method="post">
             <h3>Person Details</h3>
             <fieldset>
-                <input placeholder="Person Name" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Gender" type="text" tabindex="2" required>
-            </fieldset>
-            <p>Date of Birth</p>
-            <fieldset>
-                <input placeholder="Date of Birth" type="Date" tabindex="3" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Marital Status" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Religion" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Literacy" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </fieldset>
+                <input placeholder="Person Name" name="personName" type="text" tabindex="1" required autofocus>
+                <input placeholder="Gender" name="gender" type="text" tabindex="2" required>
+
+                <p>Date of Birth</p>
+
+                <input placeholder="Date of Birth" name="DOB" type="Date" tabindex="3" required>
+                <input placeholder="Marital Status" name="marital" type="text" tabindex="4" required>
+                <input placeholder="Religion" name="religion" type="text" tabindex="4" required>
+                <input placeholder="Literacy" name="literacy" type="text" tabindex="4" required>
+                <button name="submit" type="submit" id="contact-submit">Submit</button>
+
+
         </form>
     </div>
     <div class="container">
-        <form id="form" action="" method="post">
+        <form id="form" action="/submitaddress" method="post">
             <h3>Address</h3>
-            <fieldset>
-                <input placeholder="zip code" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="House Number" type="text" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Province Number" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Municipality" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Ward" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="City" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Tole" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+
+            <input placeholder="zip code" name="zipcode" type="number" tabindex="1" required autofocus>
+            <input placeholder="House Number" name="housenumber" type="number" tabindex="2" required>
+            <input placeholder="Province Number" name="provincenumber" type="number" tabindex="4" required>
+            <input placeholder="Municipality" name="municipality" type="text" tabindex="4" required>
+            <input placeholder="Ward" name="ward" type="number" tabindex="4" required>
+            <input placeholder="City" name="city" type="text" tabindex="4" required>
+            <input placeholder="Tole" name="tole" type="text" tabindex="4" required>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
         </form>
     </div>
-    <div class="container">
+    {{!-- <div class="container">
         <form id="form" action="" method="post">
             <h3>Health Information</h3>
-            <fieldset>
-                <input placeholder="Blood Group" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Regular Medicine" type="text" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Disability" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Previous Accident" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input placeholder="Blood Group" type="text" tabindex="1" required autofocus>
+            <input placeholder="Regular Medicine" type="text" tabindex="2" required>
+            <input placeholder="Disability" type="text" tabindex="4" required>
+            <input placeholder="Previous Accident" type="text" tabindex="4" required>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
         </form>
-    </div>
+    </div> --}}
     <div class="container">
-        <form id="form" action="" method="post">
+        <form id="form" action="/submitfamilyinformation" method="post">
             <h3>Family Information</h3>
-            <fieldset>
-                <input placeholder="House Number" type="text" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of Male" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of Female" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of children" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of Earning Member" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of Dependent Member" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of Disabled Member" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of Literate Member" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Permanent Adress" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input placeholder="House Number" name="housenumber" type="number" tabindex="2" required>
+            <input placeholder="Number of Male" name="numberofmale" type="number" tabindex="4" required>
+            <input placeholder="Number of Female" name="numberoffemale" type="number" tabindex="4" required>
+            <input placeholder="Number of children" name="numberofchildren" type="number" tabindex="4" required>
+            <input placeholder="Number of Earning Member" name="earningnumber" type="number" tabindex="4" required>
+            <input placeholder="Number of Dependent Member" name="dependentnumber" type="number" tabindex="4" required>
+            <input placeholder="Number of Disabled Member" name="disablednumber" type="number" tabindex="4" required>
+            <input placeholder="Number of Literate Member" name="literatenumber" type="number" tabindex="4" required>
+            <input placeholder="Permanent Adress" name="paddress" type="text" tabindex="4" required>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
         </form>
     </div>
     <div class="container">
-        <form id="form" action="" method="post">
+        <form id="form" action="submithouseinformation" method="post">
             <h3>House Information</h3>
             <fieldset>
-                <input placeholder="House Number" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Owner" type="text" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Age of Housing" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Insurance" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Source of Light" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Source of Fuel" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input placeholder="House Number" name="housenumber" type="number" tabindex="1" required autofocus>
+            <input placeholder="Owner" name="owner" type="text" tabindex="2" required>
+            <input placeholder="Age of Housing" name="type" type="number" tabindex="4" required>
+            <input placeholder="Insurance" name="insurance" type="text" tabindex="4" required>
+            <input placeholder="Source of Light" name="sourceoflight" type="text" tabindex="4" required>
+            <input placeholder="Source of Fuel" name="sourceoffuel" type="text" tabindex="4" required>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
         </form>
     </div>
     <div class="container">
-        <form id="form" action="" method="post">
+        <form id="form" action="/submithousestructure" method="post">
             <h3>House Structure</h3>
             <fieldset>
-                <input placeholder="House Number" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Type" type="text" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Roofing Type" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="EarthQuake Resistant" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Numberof Storey" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Number of Rooms" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Latrine" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input placeholder="House Number" name="housenumber" type="number" tabindex="1" required autofocus>
+            <input placeholder="Type" type="text" name="type" tabindex="2" required>
+            <input placeholder="Roofing Type" name="roofingtype" type="text" tabindex="4" required>
+            <input placeholder="EarthQuake Resistant" name="earthquake" type="text" tabindex="4" required>
+            <input placeholder="Number of Storey" type="number" name="numberofstorey" tabindex="4" required>
+            <input placeholder="Number of Rooms" type="number" name="numberofrooms" tabindex="4" required>
+            <input placeholder="Latrine" name="latrine" type="text" tabindex="4" required>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
         </form>
     </div>
     <div class="container">
-        <form id="form" action="" method="post">
+        <form id="form" action="/submitarea" method="post">
             <h3>Land Information</h3>
             <fieldset>
-                <input placeholder="House Number" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Type" type="text" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Area" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input placeholder="House Number" name="housenumber" type="number" tabindex="1" required autofocus>
+            <input placeholder="Type" name="type" type="text" tabindex="2" required>
+            <input placeholder="Area" name="area" type="number" tabindex="4" required>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
         </form>
     </div>
     <div class="container">
-        <form id="form" action="" method="post">
+        <form id="form" action="/submitluxury" method="post">
             <h3>Luxury</h3>
             <fieldset>
-                <input placeholder="House Number" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Vehicles" type="text" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Internet" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="CellPhone" type="text" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <input placeholder="House Number" name="housenumber" type="number" tabindex="1" required autofocus>
+            <input placeholder="Vehicles" name="vehicles" type="text" tabindex="2" required>
+            <input placeholder="Internet" name="internet" type="text" tabindex="4" required>
+            <input placeholder="CellPhone" name="cellphone" type="text" tabindex="4" required>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
         </form>
     </div>
